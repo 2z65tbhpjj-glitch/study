@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111318">
+
+  <title>Aw, snap.</title>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #111318;
+      color: #edf0f5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100svh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 32px 24px;
+    }
+
+    main {
+      width: 100%;
+      max-width: 540px;
+    }
+
+    .page-icon {
+      display: block;
+      width: 64px;
+      height: 76px;
+      margin-bottom: 30px;
+      color: #939ba9;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(30px, 6vw, 40px);
+      font-weight: 600;
+      letter-spacing: -1px;
+      line-height: 1.15;
+    }
+
+    p {
+      margin: 0;
+      max-width: 480px;
+      color: #adb5c2;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        color-scheme: light;
+        background: #f7f8fa;
+        color: #252932;
+      }
+
+      .page-icon {
+        color: #737c8b;
+      }
+
+      p {
+        color: #596271;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main aria-labelledby="page-title">
+    <svg
+      class="page-icon"
+      viewBox="0 0 64 76"
+      fill="none"
+      aria-hidden="true"
+    >
+      <path
+        d="M12 3H39L55 19V70C55 71.7 53.7 73 52 73H12C10.3 73 9 71.7 9 70V6C9 4.3 10.3 3 12 3Z"
+        stroke="currentColor"
+        stroke-width="3"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M39 3V19H55"
+        stroke="currentColor"
+        stroke-width="3"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M21 34L27 40M27 34L21 40M37 34L43 40M43 34L37 40"
+        stroke="currentColor"
+        stroke-width="3"
+        stroke-linecap="round"
+      />
+      <path
+        d="M23 57C27 50 37 50 41 57"
+        stroke="currentColor"
+        stroke-width="3"
+        stroke-linecap="round"
+      />
+    </svg>
+
+    <h1 id="page-title">Aw, snap.</h1>
+    <p>You're in a older version of Goo Goo Gaga. Please move to the newer version.</p>
+  </main>
+</body>
+</html>
